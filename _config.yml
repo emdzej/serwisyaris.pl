@@ -15,8 +15,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: Okopowa 70/106
-  - line: 91-849 Łódź, Polska
+  line: Okopowa 70/106, 91-849 Łódź, Polska
+  url: https://goo.gl/maps/Xy27vJHyEZiTvEaD9
 
 
 

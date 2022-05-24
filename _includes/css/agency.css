@@ -178,10 +178,15 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #{{ site.data.template.color.primary }};
+    color: #{{ site.data.template.color.primary-header }};
 }
 
+.navbar-default.navbar-shrink .navbar-brand {
+    color: #fff;
+}
+.navbar-default.navbar-shrink  .nav li a {
+    color: #fff;
+}
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
@@ -212,7 +217,8 @@ fieldset[disabled] .btn-xl.active {
     font-family: {{ site.data.template.font.primary }};
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: #{{ site.data.template.color.primary-header }};
+    
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
@@ -240,6 +246,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
+        color: #fff;
         background-color: transparent;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
@@ -260,10 +267,12 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         background-color: #222;
+        
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        
     }
 }
 
@@ -283,6 +292,7 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    text-shadow: 2px 2px #333;
 }
 
 header .intro-text .intro-lead-in {
@@ -669,25 +679,14 @@ section#contact .section-heading {
     color: #fff;
 }
 
-section#contact .form-group {
-    margin-bottom: 25px;
-}
 
-section#contact .form-group input,
-section#contact .form-group textarea {
-    padding: 20px;
-}
-
-section#contact .form-group input.form-control {
-    height: auto;
-}
-
-section#contact .form-group textarea.form-control {
-    height: 236px;
-}
 
 section#contact .list-unstyled li {
     padding: 1em;
+}
+
+section#contact .list-unstyled li a {
+    color: #fff;
 }
 
 section#contact .form-control:focus {
@@ -725,6 +724,12 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+}
+
+section#contact .map {
+    border: none;
+    width: 80%;
+    min-height: 300px;
 }
 
 footer {
