@@ -1,0 +1,25 @@
+url: https://y7kim.github.io
+baseurl: /agency-jekyll-theme/
+
+# Site settings
+title: Serwis Yaris
+email: kontakt@serwisyaris.pl
+phone: "+48 796 119 137"
+description: "Wyspecjalizowany serwis samochodów Toyota Yaris"
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: facebook
+    handle: "@serwisyaris"
+    url: https://www.facebook.com/serwisyaris/
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Okpowowa 70/106
+  - line: 91-850 Łódź, Polska
+
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty

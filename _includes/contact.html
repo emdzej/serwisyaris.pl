@@ -1,0 +1,68 @@
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Kontakt</h2>
+                <h3 class="section-subheading text-inverted">
+                    Jeżeli jesteś zainteresowany lub zaintereowana naszymi usługami, zapraszamy do kontaktu.
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 text-inverted">
+
+
+
+                <ul class="list-unstyled">
+                    <li>
+                        <span class="fa-stack fa-1x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                        </span>
+                        {{ site.phone }}
+                    </li>
+                    <li>
+                        <span class="fa-stack fa-1x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-at fa-stack-1x fa-inverse"></i>
+                        </span>
+
+                        {{ site.email }}
+                    </li>
+                    {% for network in site.social %}
+                    <li>
+                        <span class="fa-stack fa-1x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-at fa-stack-1x  fa-{{ network.title }} fa-inverse"></i>
+                        </span>
+                        <a href="{{ network.url }}">
+                            {{ network.handle }}                    
+                        </a>
+                    </li>
+                    {% endfor %}
+                    
+                    
+                    <li>
+                        <span class="fa-stack fa-1x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-location-dot fa-stack-1x fa-inverse"></i>
+                        </span>
+                        {% for element in site.address %}
+                        {{element.line}}  
+                        {% endfor %}
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9870.07089309509!2d19.4683258!3d51.7967001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fe95e139d6fd08!2sSerwis%20Yaris!5e0!3m2!1sen!2spl!4v1653385831197!5m2!1sen!2spl"
+                    width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
